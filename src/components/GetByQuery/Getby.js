@@ -1,11 +1,13 @@
 import React from 'react'
 
-const GetbyRole = () => {
+const Getby = () => {
   return (
+    <>
+    <p>React testing</p>
     <form>
         <div>
             <label htmlFor='firstname'>First Name</label>
-            <input type='text' id='firstname' />
+            <input type='text' id='firstname' value='Arjun' onChange={() => {}}/>
             <label htmlFor='lastname'>Last Name</label>
             <input type='text' id='lastname' />
         </div>
@@ -26,7 +28,8 @@ const GetbyRole = () => {
             <button type='submit'>Submit</button>
         </div>
     </form>
+    </>
   )
 }
 
-export default GetbyRole
+export default Getby

@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import GetbyRole from "./getByRole";
+import Getby from "./Getby";
 
 describe('Get By Role' , () => {
     test('renders component',() => {
-        render(<GetbyRole />);
+        render(<Getby />);
         const firstNameEl = screen.getByRole('textbox', {
             name:'First Name'
         });
@@ -22,5 +22,11 @@ describe('Get By Role' , () => {
 
         const butEl = screen.getByRole('button',{name:'Submit'});
         expect(butEl).toBeInTheDocument();
+
+        const paraEl = screen.getByText(/React Testing/i);
+        expect(paraEl).toBeInTheDocument();
+
+        const valEl = screen.getByDisplayValue('Arjun');
+        expect(valEl).toBeInTheDocument();
     });
 })
