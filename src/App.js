@@ -1,9 +1,11 @@
-import GetbyRole from "./components/GetByQuery/GetbyRole";
+import GetAll from "./components/GetAllByQuery/GetAll";
+import Getby from "./components/GetByQuery/Getby";
 
 function App() {
   return (
     <div>
-      <GetbyRole />
+      <Getby />
+      <GetAll />
     </div>
   );
 }
