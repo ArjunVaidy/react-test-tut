@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react"
 import Tdd from "./Tdd"
 
 describe('Test Driven Development Group',() => {
-    test('test driven devlopment', () => {
+    test('test driven devlopment without props', () => {
         render(<Tdd />);
         const textEl = screen.getByText(/Hello/i);
         expect(textEl).toBeInTheDocument();
