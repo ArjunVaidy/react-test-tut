@@ -8,7 +8,7 @@ test('test driven devlopment', () => {
 })
 
 
-test('test driven devlopment props', () => {
+test.only('test driven devlopment props', () => {
     render(<Tdd name='Arjun'/>);
     const textEl = screen.getByText(/Hello Arjun/i);
     expect(textEl).toBeInTheDocument();
