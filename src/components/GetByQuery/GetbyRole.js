@@ -4,8 +4,10 @@ const GetbyRole = () => {
   return (
     <form>
         <div>
-            <label htmlFor='name'>Name</label>
-            <input type='text' id='name' />
+            <label htmlFor='firstname'>First Name</label>
+            <input type='text' id='firstname' />
+            <label htmlFor='lastname'>Last Name</label>
+            <input type='text' id='lastname' />
         </div>
         <div>
             <label htmlFor="location">Location</label>
