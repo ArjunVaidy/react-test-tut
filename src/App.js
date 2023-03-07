@@ -1,20 +1,13 @@
-import Findby from "./components/FindByQuery/Findby";
-import GetAll from "./components/GetAllByQuery/GetAll";
-import Getby from "./components/GetByQuery/Getby";
-import InputField from "./components/KeyboardInteractions/InputField";
-import Counter from "./components/Pointerinteraction.js/Counter";
-import Queryby from "./components/QueryBy/Queryby";
+import MuiHeading from "./components/MuiHeading/MuiHeading";
+import MuiProviders from "./components/MuiProvider/MuiProviders";
 
 function App() {
   return (
+    <MuiProviders>
     <div>
-      {/* <Queryby />
-      <Getby />
-      <GetAll />
-      <Findby />
-      <Counter /> */}
-      <InputField />
+      <MuiHeading />
     </div>
+    </MuiProviders>
   );
 }
 
