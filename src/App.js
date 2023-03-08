@@ -1,13 +1,10 @@
-import MuiHeading from "./components/MuiHeading/MuiHeading";
-import MuiProviders from "./components/MuiProvider/MuiProviders";
+import { Mocking } from "../src/components/Mocking/Mocking";
 
 function App() {
   return (
-    <MuiProviders>
-    <div>
-      <MuiHeading />
-    </div>
-    </MuiProviders>
+    <>
+    <Mocking />
+    </>
   );
 }
 
